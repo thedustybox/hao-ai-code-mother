@@ -1,10 +1,17 @@
 spring:
   application:
     name: hao-ai-code-mother
+  # mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hao_ai_code_mother
+    username: root
+    password: 123123
 server:
   port: 8123
   servlet:
     context-path: /api
+
 # springdoc-openapi
 springdoc:
   group-configs:
